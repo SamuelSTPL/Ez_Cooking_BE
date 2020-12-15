@@ -9,7 +9,7 @@ const {
   getRecipesFromId,
 } = require("./handler");
 
-const PORT = 4000;
+const PORT = process.env.PORT;
 
 express()
   .use(function (req, res, next) {
